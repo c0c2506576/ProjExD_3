@@ -171,7 +171,7 @@ def main():
     bg_img = pg.image.load("fig/pg_bg.jpg")
     bird = Bird((300, 200))
     bombs = [Bomb((255, 0, 0), 10) for _ in range(NUM_OF_BOMBS)]
-    beams = [] #複数ビームを作るためにリストを追加
+    beams = [] # 複数ビームを作るためにリストを追加
     score = Score()  # スコア表示させるために必要
     clock = pg.time.Clock()
     tmr = 0
