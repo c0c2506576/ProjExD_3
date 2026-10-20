@@ -163,7 +163,8 @@ def main():
                 if beam.rct.colliderect(bomb.rct):
                     bomb = None
                     beam = None
-                
+                    bird.change_img(6, screen) #こうかとんが喜ぶ画像を挿入する
+
                 # ゲームオーバー時に，こうかとん画像を切り替え，1秒間表示させる
             if bomb is not None:
                 if bird.rct.colliderect(bomb.rct):
